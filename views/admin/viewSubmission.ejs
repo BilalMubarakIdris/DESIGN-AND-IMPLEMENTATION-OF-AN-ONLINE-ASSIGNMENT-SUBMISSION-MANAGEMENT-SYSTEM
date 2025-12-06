@@ -1,0 +1,71 @@
+<div class="container mt-5">
+  <div class="card shadow-lg border-0">
+    <div class="card-header bg-primary text-white">
+      <h3 class="mb-0">Submission Details</h3>
+    </div>
+
+    <div class="card-body">
+      <!-- Student Info Section -->
+      <div class="mb-4">
+        <h5 class="fw-bold">Student Information</h5>
+        <p class="mb-1">
+          <strong>Name:</strong> <%= submission.student.name %>
+        </p>
+        <p class="mb-1">
+          <strong>Registration Number:</strong> <%= submission.student.regNo %>
+        </p>
+      </div>
+
+      <!-- Assignment Info -->
+      <div class="mb-4">
+        <h5 class="fw-bold">Assignment Details</h5>
+        <p><strong>Title:</strong> <%= submission.title %></p>
+        <p><strong>Description:</strong> <%= submission.description %></p>
+        <p>
+          <strong>File:</strong>
+          <a
+            href="<%= submission.fileUrl %>"
+            target="_blank"
+            class="btn btn-sm btn-outline-primary"
+          >
+            View File
+          </a>
+        </p>
+      </div>
+
+      <!-- Grading Form -->
+      <div class="mt-4">
+        <h5 class="fw-bold">Grade Submission</h5>
+
+        <form
+          action="/admin/submissions/<%= submission._id %>/grade"
+          method="POST"
+          class="mt-3"
+        >
+          <div class="mb-3">
+            <label class="form-label">Grade</label>
+            <input
+              type="text"
+              name="grade"
+              required
+              class="form-control"
+              placeholder="Enter grade (e.g. 85, A, B+)"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Feedback</label>
+            <textarea
+              name="feedback"
+              rows="4"
+              class="form-control"
+              placeholder="Write feedback for the student..."
+            ></textarea>
+          </div>
+
+          <button class="btn btn-success mt-2 px-4">Submit Grade</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+<% title = "Student Dashboard" %>
+
+<h3>Welcome, <%= currentUser.name %></h3>
+
+<div class="row mt-4">
+  <div class="col-md-4">
+    <a href="/dashboard/submit" class="text-decoration-none">
+      <div class="card dashboard-card p-4 text-center bg-info text-white">
+        <h4>Submit Assignment</h4>
+      </div>
+    </a>
+  </div>
+
+  <div class="col-md-4">
+    <a href="/dashboard/submissions" class="text-decoration-none">
+      <div class="card dashboard-card p-4 text-center bg-success text-white">
+        <h4>My Submissions</h4>
+      </div>
+    </a>
+  </div>
+
+  <div class="col-md-4">
+    <a href="/dashboard/results" class="text-decoration-none">
+      <div class="card dashboard-card p-4 text-center bg-warning text-dark">
+        <h4>View Grades</h4>
+      </div>
+    </a>
+  </div>
+</div>

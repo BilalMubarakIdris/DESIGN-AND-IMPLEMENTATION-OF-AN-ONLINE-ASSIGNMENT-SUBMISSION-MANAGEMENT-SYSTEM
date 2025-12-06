@@ -1,0 +1,33 @@
+<% title = "Login" %>
+
+<div class="row justify-content-center">
+  <div class="col-md-5">
+    <div class="card p-4 shadow">
+      <h3 class="text-center mb-3">Login</h3>
+
+      <form action="/login" method="POST">
+        <div class="mb-3">
+          <label>Email</label>
+          <input type="email" class="form-control" name="email" required />
+        </div>
+
+        <div class="mb-3">
+          <label>Password</label>
+          <input
+            type="password"
+            class="form-control"
+            name="password"
+            required
+          />
+        </div>
+
+        <button class="btn btn-primary w-100">Login</button>
+      </form>
+      <!-- Extra links for login / forgot password -->
+      <div class="mt-3 text-center">
+        <p>Don't have an account? <a href="/register">Register here</a></p>
+        <p>Forgot your password? <a href="/forgot-password">Reset it</a></p>
+      </div>
+    </div>
+  </div>
+</div>

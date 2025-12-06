@@ -1,0 +1,46 @@
+{
+  "name": "design-and-implementation-of-an-online-assignment-submission-management-system",
+  "version": "1.0.0",
+  "description": "this an online submission system where student can submit his assignment and get grade",
+  "keywords": [
+    "online",
+    "assignment",
+    "submission"
+  ],
+  "homepage": "https://github.com/BilalMubarakIdris/DESIGN-AND-IMPLEMENTATION-OF-AN-ONLINE-ASSIGNMENT-SUBMISSION-MANAGEMENT-SYSTEM#readme",
+  "bugs": {
+    "url": "https://github.com/BilalMubarakIdris/DESIGN-AND-IMPLEMENTATION-OF-AN-ONLINE-ASSIGNMENT-SUBMISSION-MANAGEMENT-SYSTEM/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BilalMubarakIdris/DESIGN-AND-IMPLEMENTATION-OF-AN-ONLINE-ASSIGNMENT-SUBMISSION-MANAGEMENT-SYSTEM.git"
+  },
+  "license": "ISC",
+  "author": "Bilal Mubarak Idris",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon app.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cloudinary": "^1.41.3",
+    "connect-mongo": "^4.6.0",
+    "dotenv": "^17.2.3",
+    "ejs": "^3.1.10",
+    "express": "^5.2.1",
+    "express-ejs-layouts": "^2.5.1",
+    "express-flash": "^0.0.2",
+    "express-session": "^1.18.2",
+    "method-override": "^3.0.0",
+    "mongoose": "^9.0.0",
+    "multer": "^2.0.2",
+    "multer-storage-cloudinary": "^4.0.0",
+    "nodemailer": "^7.0.11"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}

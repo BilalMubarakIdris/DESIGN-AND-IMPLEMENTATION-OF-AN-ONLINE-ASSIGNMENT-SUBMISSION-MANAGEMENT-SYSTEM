@@ -1,0 +1,24 @@
+<% title = "My Grades" %>
+
+<h3>My Grades</h3>
+
+<table class="table table-bordered mt-3">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Submitted At</th>
+      <th>Graded</th>
+      <th>Grade</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% submissions.forEach(s => { %>
+    <tr>
+      <td><%= s.title %></td>
+      <td><%= s.submittedAt.toLocaleString() %></td>
+      <td><%= s.graded ? "Yes" : "No" %></td>
+      <td><%= s.graded ? s.grade : "-" %></td>
+    </tr>
+    <% }) %>
+  </tbody>
+</table>

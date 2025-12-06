@@ -1,0 +1,10 @@
+<h2>Your Submissions</h2>
+<ul>
+  <% submissions.forEach(s => { %>
+  <li>
+    <strong><%= s.title %></strong> - <%= s.submittedAt.toLocaleString() %> <%
+    if (s.graded) { %> - Grade: <%= s.grade %> <% } %>
+    <a href="<%= s.fileUrl %>" target="_blank">View file</a>
+  </li>
+  <% }) %>
+</ul>
